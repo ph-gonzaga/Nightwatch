@@ -5,9 +5,9 @@
 
   <testsuite name="login.sem_sucesso.test"
     errors="0" failures="0" hostname="" id="" package="login" skipped="0"
-    tests="3" time="8.243" timestamp="">
+    tests="3" time="4.211" timestamp="">
   
-    <testcase name="Senha incorreta" classname="login.sem_sucesso.test" time="6.247" assertions="3">
+    <testcase name="Senha incorreta" classname="login.sem_sucesso.test" time="2.308" assertions="3">
 
     
 
@@ -16,7 +16,7 @@
     
     </testcase>
   
-    <testcase name="Não cadastrado" classname="login.sem_sucesso.test" time="1.056" assertions="3">
+    <testcase name="Não cadastrado" classname="login.sem_sucesso.test" time="1.094" assertions="3">
 
     
 
@@ -25,7 +25,7 @@
     
     </testcase>
   
-    <testcase name="Email não informado" classname="login.sem_sucesso.test" time="0.9400" assertions="3">
+    <testcase name="Email não informado" classname="login.sem_sucesso.test" time="0.8090" assertions="3">
 
     
 
@@ -35,6 +35,13 @@
     </testcase>
   
 
+  
+    <system-err>
+      [0;31m  TypeError: browser.page.login is not a function
+   - verify if page objects are setup correctly, check &#34;page_objects_path&#34; in your config[0m
+[0;90m       at Object.DadoQueEuAcessoAPaginaDeLoginQuandoEuFaOLoginComSucesso [as Dado que eu acesso a pagina de login, Quando eu faço login com sucesso] (D:/Github/Nightwatch/zombieplus/tests/login/com_sucesso.test.js:17:34)
+       at processTicksAndRejections (internal/process/task_queues.js:93:5)[0m
+    </system-err>
   
 
   
