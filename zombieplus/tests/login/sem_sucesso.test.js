@@ -12,6 +12,16 @@ module.exports = {
     //   .assert.containsText(userInfo, "Pedro")
     //    .end();
     //},
+    before: (browser) => {
+        browser.resizeWindow(1920,1080)
+    },
+
+    after: (browser) => {
+        browser.end();
+    },
+
+    '@disabled': true,
+    
     'Senha incorreta':(browser) => {
         let alert = ".alert-danger"
         browser
