@@ -57,6 +57,18 @@ module.exports = {
         .click(".login-button")
         .waitForElementVisible(alert, 3000)
         .assert.containsText(alert, 'Opps. Cadê o email?')
+    },
+    'Senha não informado': (browser) => {
+        let alert = ".alert-info"
+        browser
+        .resizeWindow(1920,1080)
+        .url("http://zombie-web:5000/login")
+        .waitForElementVisible(".card-login", 3000)
+        .setValue("input[name=email]", "pedro@teste.com")
+        .setValue("input[name=password]", "")
+        .click(".login-button")
+        .waitForElementVisible(alert, 3000)
+        .assert.containsText(alert, 'Opps. Cadê a senha?')
         .end();
-    }
+}
 }
